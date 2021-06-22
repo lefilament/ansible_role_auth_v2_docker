@@ -1,0 +1,16 @@
+---
+- name: rebuild auth docker
+  docker_compose:
+    project_src: /home/docker/auth
+    build: true
+    recreate: always
+    restarted: true
+    remove_orphans: true
+  async: 600
+  poll: 10
+  when: not ansible_check_mode
+
+- name: start auth docker
+  docker_compose:
+    project_src: /home/docker/auth
+    remove_orphans: true

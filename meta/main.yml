@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Rémi
+  description: This role deploys LemonLDAP v2 together with LDAP for SSO authentication. Role not maintained anymore.
+  company: Le Filament (https://le-filament.com)
+  license: AGPL-3.0-or-later
+  min_ansible_version: 2.1
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+  galaxy_tags:
+    - sso
+    - lemonldap
+    - ldap
+    - openldap
+    - phpldapadmin
